@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Research Scripts </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <style>
+
+        .commands {
+            background-color: #eee;
+            height: 700px;
+        }
+        .console {
+            background-color: #57576F;
+            height: 700px;
+            padding: 10px;
+            font-family: monospace;
+            overflow: scroll;
+        }
+        .output {
+            height: 700px;
+            overflow: scroll;
+            background: #f8f8f8;
+            color: #008000;
+        }
+        .console .log-message.default {
+            color: #eee;
+        }
+        .console .log-message.success {
+            color: #B9F7CF;
+        }
+        .console .log-message.danger {
+            color: #FDA0A0;
+        }
+        .console .log-message.warning {
+            color: #F7FDA0;
+        }
+        .btn-div {
+            padding: 5px;
+        }
+
+        </style>
+    </head>
+    <body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 commands">
+                <h3> Commands</h3>
+                <p>Use commands available below to restructure data.</p>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="btn-div"><button id="buildSessions" class="btn btn-sm btn-default  ">Build Sessions</button></div>
+                        <div class="btn-div"><button id="buildUsers" class="btn btn-sm btn-default  ">Build Users</button></div>
+                        <div class="btn-div"><button id="saveCSV" class="btn btn-sm btn-default  ">Save CSV</button></div>
+                    </div>
+                    <div class="col-xs-9">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-8 output">
+            </div>
+        </div>
+    </div>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="js/FileSaver.min.js"></script>
+<script src="js/helpers.js"></script>
+<script src="js/script.js"></script>
+
+
+    </body>
+</html>
